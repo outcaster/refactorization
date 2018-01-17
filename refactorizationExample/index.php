@@ -25,18 +25,13 @@ class Product
         $cacheDuration = 60,
         $securityStockConfig = null
     ) {
-
-        //Inicializamos los managers
-        $orderLineManager    = new OrderLineManager();
-        $blockedStockManager = new BlockedStockManager();
-
         //Consigue las cantidades
-        $ordersQuantity       = $orderLineManager::getBlockedStockQuantityForProduct(
+        $ordersQuantity       = OrderLineManager::getBlockedStockQuantityForProduct(
             $productId,
             $cache,
             $cacheDuration
         );
-        $blockedStockQuantity = $blockedStockManager::getBlockedStockQuantityForProduct(
+        $blockedStockQuantity = BlockedStockManager::getBlockedStockQuantityForProduct(
             $productId,
             $cache,
             $cacheDuration
