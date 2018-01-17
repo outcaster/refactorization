@@ -7,14 +7,14 @@ namespace qashops\demo\Business;
 class BlockedStockManager
 {
     /**
-	 * Consigue el stock bloqueado sobre un producto
-	 *
-	 * @param integer $productId
+     * Consigue el stock bloqueado sobre un producto
+     *
+     * @param integer $productId
      * @param boolean $cache
      * @param integer $cacheDuration
-	 *
-	 * @return integer
-	 */
+     *
+     * @return integer
+     */
     public static function getBlockedStockQuantityForProduct($productId, $cache, $cacheDuration)
     {
         if ($cache) {
