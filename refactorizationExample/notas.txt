@@ -1,0 +1,3 @@
+- Debido a la falta de contexto he dejado a mi criterio algunas de las interpretaciones del código, sin intentar fantasear demasiado
+- Nótese el uso de clases del tipo "servicio/manager" para gestionar lógica de negocio. Algunos frameworks como fuelPHP trabajan estas lógicas en los modelos, pero esto no es lo más adecuado.
+- Se ha usado el estandard de código PSR-2 para este ejemplo
